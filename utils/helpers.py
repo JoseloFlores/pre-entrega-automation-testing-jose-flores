@@ -1,16 +1,16 @@
-"""Funciones auxiliares para los tests de saucedemo.com."""
+# Funciones auxiliares para los tests de saucedemo.com
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# --- Localizadores (estrategia: id único > CSS estable, sin XPaths absolutos) ---
 USERNAME_INPUT = (By.CSS_SELECTOR, "#user-name")       # id único
 PASSWORD_INPUT = (By.CSS_SELECTOR, "#password")       # id único
 LOGIN_BUTTON = (By.CSS_SELECTOR, "#login-button")      # id único
 INVENTORY_TITLE = (By.CSS_SELECTOR, ".title")          # "Products"
 APP_LOGO = (By.CSS_SELECTOR, ".app_logo")             # "Swag Labs"
 
-# --- Localizadores de catálogo y carrito ---
+
 INVENTORY_ITEMS = (By.CLASS_NAME, "inventory_item")              # tarjetas de producto
 FIRST_PRODUCT_NAME = (By.CLASS_NAME, "inventory_item_name")      # nombre dentro de cada tarjeta
 FIRST_ADD_BUTTON = (By.CSS_SELECTOR, "button[data-test^='add-to-cart']")  # botón Add to cart

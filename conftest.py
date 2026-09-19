@@ -1,8 +1,8 @@
-"""Fixture global de Selenium WebDriver.
+#  Fixture global de Selenium WebDriver.
+#
+#  Provee un driver de Chrome fresco por cada test (scope=function)
+#  para garantizar independencia entre tests.
 
-Provee un driver de Chrome fresco por cada test (scope=function)
-para garantizar independencia entre tests.
-"""
 import os
 import pytest
 from selenium import webdriver
