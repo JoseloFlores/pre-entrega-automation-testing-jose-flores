@@ -12,6 +12,8 @@ con **Python + Selenium WebDriver + Pytest**.
 - Selenium 4 + webdriver-manager (descarga automática del ChromeDriver)
 - Pytest + pytest-html (reporte HTML)
 - Git / GitHub
+- Google Chrome 154.0.8037.57
+
 
 ## Instalación
 ```bash
